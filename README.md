@@ -11,9 +11,58 @@ npx cap sync
 
 ## API
 
-<docgen-index></docgen-index>
+<docgen-index>
+
+* [`isPiPAvailable()`](#ispipavailable)
+* [`startPiPMode(...)`](#startpipmode)
+* [Interfaces](#interfaces)
+
+</docgen-index>
 
 <docgen-api>
-<!-- run docgen to generate docs from the source -->
-<!-- More info: https://github.com/ionic-team/capacitor-docgen -->
+<!--Update the source file JSDoc comments and rerun docgen to update the docs below-->
+
+### isPiPAvailable()
+
+```typescript
+isPiPAvailable() => Promise<IStatus>
+```
+
+**Returns:** <code>Promise&lt;<a href="#istatus">IStatus</a>&gt;</code>
+
+--------------------
+
+
+### startPiPMode(...)
+
+```typescript
+startPiPMode(options?: { aspectRatio?: IRatio | undefined; } | undefined) => Promise<{ success: boolean; }>
+```
+
+| Param         | Type                                                         |
+| ------------- | ------------------------------------------------------------ |
+| **`options`** | <code>{ aspectRatio?: <a href="#iratio">IRatio</a>; }</code> |
+
+**Returns:** <code>Promise&lt;{ success: boolean; }&gt;</code>
+
+--------------------
+
+
+### Interfaces
+
+
+#### IStatus
+
+| Prop            | Type                 |
+| --------------- | -------------------- |
+| **`available`** | <code>boolean</code> |
+
+
+#### IRatio
+
+| Prop         | Type                |
+| ------------ | ------------------- |
+| **`height`** | <code>number</code> |
+| **`width`**  | <code>number</code> |
+
 </docgen-api>
