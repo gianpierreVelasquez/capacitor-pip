@@ -1,6 +1,6 @@
 {
   "name": "capacitor-pip",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Capacitor plugin for picture in picture feature",
   "main": "dist/plugin.cjs.js",
   "module": "dist/esm/index.js",
