@@ -82,7 +82,7 @@ openSettings() => Promise<void>
 
 </docgen-api>
 
-## How to used
+## How to use
 
 Quick example of how to use, following provider pattern
 
