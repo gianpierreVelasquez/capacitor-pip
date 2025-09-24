@@ -2,9 +2,7 @@ import { registerPlugin } from '@capacitor/core';
 
 import type { PictureInPicturePlugin } from './definitions';
 
-const PiP = registerPlugin<PictureInPicturePlugin>('PiP', {
-  web: import('./web').then(m => new m.PictureInPictureWeb()),
-});
+const PictureInPicture = registerPlugin<PictureInPicturePlugin>('PictureInPicture');
 
 export * from './definitions';
-export { PiP };
+export { PictureInPicture };

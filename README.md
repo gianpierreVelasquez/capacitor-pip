@@ -14,7 +14,9 @@ npx cap sync
 <docgen-index>
 
 * [`isPiPAvailable()`](#ispipavailable)
+* [`isPipEnable()`](#ispipenable)
 * [`startPiPMode(...)`](#startpipmode)
+* [`openSettings()`](#opensettings)
 * [Interfaces](#interfaces)
 
 </docgen-index>
@@ -25,10 +27,21 @@ npx cap sync
 ### isPiPAvailable()
 
 ```typescript
-isPiPAvailable() => Promise<IStatus>
+isPiPAvailable() => Promise<{ available: boolean; }>
 ```
 
-**Returns:** <code>Promise&lt;<a href="#istatus">IStatus</a>&gt;</code>
+**Returns:** <code>Promise&lt;{ available: boolean; }&gt;</code>
+
+--------------------
+
+
+### isPipEnable()
+
+```typescript
+isPipEnable() => Promise<{ enable: boolean; }>
+```
+
+**Returns:** <code>Promise&lt;{ enable: boolean; }&gt;</code>
 
 --------------------
 
@@ -48,14 +61,16 @@ startPiPMode(options?: { aspectRatio?: IRatio | undefined; } | undefined) => Pro
 --------------------
 
 
+### openSettings()
+
+```typescript
+openSettings() => Promise<void>
+```
+
+--------------------
+
+
 ### Interfaces
-
-
-#### IStatus
-
-| Prop            | Type                 |
-| --------------- | -------------------- |
-| **`available`** | <code>boolean</code> |
 
 
 #### IRatio
